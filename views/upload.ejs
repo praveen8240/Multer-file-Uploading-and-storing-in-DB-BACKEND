@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin-left: 45%; margin-top: 5rem;">
+        <h1>Upload Image</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="text" name="username" placeholder="Enter username" pattern="[a-z].*[0-9]$"
+            title="Username must end with numerics and have at least one letter" minlength="5" required><br/>
+            <input type="file" name="image" required/><br/>
+            <input type="submit"/>
+        </form><br/><br/><br/>
+        <h1>Login to Your Profile</h1>
+        <form action="/profileLogin" method="get">
+            <input type="text" name="username" placeholder="Enter username" required><br/>
+            <input type="submit"/>
+        </form>
+    </div>
+</body>
+</html>
